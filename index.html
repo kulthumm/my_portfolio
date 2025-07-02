@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Particles.js Library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Reset padding/margin to avoid gaps -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .dancing-script {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .fade-out {
+      opacity: 1;
+      transition: opacity 1.5s ease;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+</head>
+
+  <!-- Welcome Section with Particles -->
+<section id="welcome" class="h-screen w-full relative overflow-hidden fade-out">
+  <!-- Background Image -->
+  <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('assets/images/blue-butterfly.jpg'); filter: brightness(80%);">
+    <div id="particles-js" class="absolute inset-0"></div>
+  </div>
+
+  <!-- Overlay Text -->
+  <div class="relative z-10 h-full flex flex-col justify-center items-center text-white px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold dancing-script drop-shadow-lg">
+      Code, like a butterfly, begins in silence —<br> and unfolds into something beautiful.
+    </h1>
+    
+  </div>
+</section>
+
+
+
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md fixed top-0 w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-700">My Portfolio</h1>
+      <div class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-yellow-600 font-medium">Home</a>
+        <a href="about.html" class="text-gray-700 hover:text-yellow-600 font-medium">About</a>
+        <a href="contact.html" class="text-gray-700 hover:text-yellow-600 font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="about" class="pt-28 pb-16 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
+  <section class="pt-28 pb-16 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Profile Picture -->
+    <img 
+      src="assets/images/profile.jpg" 
+      alt="My profile" 
+      class="w-72 h-96 object-cover object-top rounded-xl shadow-xl border-4 border-blue-500 transform hover:scale-105 transition duration-300" />
+    
+    <!-- Intro -->
+    <!-- Intro -->
+<div class="text-center md:text-left max-w-4xl">
+  <h1 class="text-6xl font-extrabold text-gray-900 mb-6 animate-bounce leading-tight">
+    Who is she? 👀
+  </h1>
+  <p class="text-2xl text-gray-800 mb-6 leading-relaxed">
+    I’m <strong>Kulthum Ali</strong> — a curious, creative,and driven Computer Science student at the University of Nairobi. I’m passionate about artificial intelligence, building tools that help people, and using tech to create something meaningful and magical.
+  </p>
+  <p class="text-2xl text-gray-800 mb-6 leading-relaxed">
+    I’m currently learning web development, Python, and UI/UX. I built a gamified To-Do app called the Quest Tracker 🎯 that helps users stay motivated and organized — with XP, streaks, quotes, and more.
+  </p>
+  <blockquote class="italic text-blue-700 text-2xl mt-4">
+    “The future belongs to those who code it.” 💙
+  </blockquote>
+  <div class="flex flex-col md:flex-row justify-center items-center gap-4 mt-8 mb-6 relative left-[-88px]">
+  <div class="flex justify-end mt-6">
+  <a href="about.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition">
+    More About Me
+  </a>
+</div>
+</div>
+</div>
+
+
+  </div>
+</section>
+<section class="py-16 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
+
+  <!-- ✧ Divider moved upward by 3cm -->
+<div class="flex justify-center -mt-[114px] mb-4">
+  <p class="text-black text-xl font-semibold leading-none">
+    ₊˚ ✧ ━━━━⊱⋆⊰━━━━ ✧ ₊˚˚ ✧ ━━━━⊱⋆⊰━━━━ ✧ ₊˚˚ ✧ ━━━━⊱⋆⊰━━━━ ✧ ₊˚˚ ✧ ━━━━⊱⋆⊰━━━━ ✧ ₊˚˚ ✧ ━━━━⊱⋆⊰━━━━ ✧ ₊˚˚ ✧ ━━━━⊱⋆⊰━━━━ ✧ ₊˚
+  </p>
+</div>
+
+  <div class="max-w-5xl mx-auto text-center pl-10 md:pl-12">
+    <h2 class="text-3xl font-bold text-blue-700 mb-8 animate-pulse">💻 Featured Project</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+<!-- Project Card -->
+      <div class="bg-blue-50 p-6 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition transform">
+        <img 
+          src="assets/images/quest.png" 
+          alt="Screenshot of my Quest Tracker" 
+          class="rounded-lg mb-4 border-4 border-white shadow-sm" />
+        
+        <h3 class="text-xl font-semibold mb-2 text-gray-900">🎯 Quest Tracker</h3>
+        <p class="text-gray-800 mb-4">
+          A Python-based gamified To-Do app with XP, streaks, motivational quotes, and more — built by me from scratch.
+        </p>
+        <a href="https://github.com/kulthumm/my_quest_tracker"
+         class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 hover:scale-105 transition transform">View on GitHub</a>
+      </div>
+      <!-- DotLottie Animation on the right -->
+      <div class="flex flex-col items-center md:items-end justify-center">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <dotlottie-player 
+      src="https://lottie.host/c76ba7d4-ee4e-436d-a640-4dfc1418d632/pPn9ln57xI.lottie" 
+      background="transparent" 
+      speed="1" 
+      style="width: 360px; height: 360px" 
+      direction="1" 
+      playMode="forward" 
+      loop 
+      autoplay>
+    </dotlottie-player>
+
+    <p class="mt-4 text-black italic text-lg text-left max-w-sm">
+  “Let your ideas dance into the world — one line of code at a time.” 🕺🤖
+</p>
+
+  </div>
+
+  </div>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#e0f2ff]">
+
+  <!-- Other sections of your page can go here -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+  <!-- Other sections here... -->
+<section class="w-full bg-[#e0f2ff] py-8 px-4">
+  <div class="max-w-4xl mx-auto text-center text-gray-700">
+    <p class="text-gray-800 text-lg font-semibold mb-2">
+      Let’s collaborate on something amazing! ✨
+    </p>
+    <p class="text-gray-700 mb-2">
+      Want to chat, hire, or ask a question?
+    </p>
+    <p class="text-gray-600 mb-4">
+      Click the <strong>Contact Me</strong> button below to get in touch 📩
+    </p>
+    <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition">
+      Contact Me
+    </a>
+  </div>
+</section>
+
+</body>
+</html>
+  </section>
+
+</body>
+</html>
+<script>
+  // Load particles
+  particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      size: { value: 3 },
+      color: { value: "#ffffff" },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: "#ffffff",
+        opacity: 0.2
+      },
+      move: { enable: true, speed: 1 }
+    },
+    interactivity: {
+      events: {
+        onhover: { enable: true, mode: "repulse" }
+      }
+    }
+  });
+
+  // Fade out welcome after 5 seconds
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      const welcome = document.getElementById("welcome");
+      if (welcome) {
+        welcome.style.opacity = "0";
+        welcome.style.transition = "opacity 1.5s ease";
+        setTimeout(() => {
+          welcome.style.display = "none";
+        }, 1500);
+      }
+    }, 5000);
+  });
+</script>
+
+
+</body>
+</html>
+
+
